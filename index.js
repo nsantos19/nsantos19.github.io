@@ -55,7 +55,7 @@ typer('#rArea').listen('Type').run(() =>{
 }).line().line(hArr,30).line(Rarr,30).run(() =>{
     inputBox.hidden = false;
     if(Rarr.join("") == ':<< Redirecting to Resume...'){
-        window.open("https://docs.google.com/document/d/1D9x7UOJG-dLNMdP21lAQHkqk1QFUUMfIcS1LAzRfWAY/edit?usp=sharing")
+        window.open("https://docs.google.com/document/d/1y6xtr-AD9hRW-wfHuB_SMFWoIWG-EuFdPBvJkF4zlmM/edit?usp=sharing")
     }if(Rarr.join("") == ':<< Redirecting to Github...'){
         window.open("https://github.com/nsantos19");
     }
