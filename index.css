@@ -1,25 +1,4 @@
-/* LIST OF FURTHER IMPROVEMENTS */
-/*
-currently working on :
-calculation draft for keyframes steps
 
-$scan-moving-duration: 3s;
-$scan-moving-delay: 7s;
-
-total time = 10s (duration + delay)
-keyframes :
-    0%: wait
-    15%: start moving
-    85%: end moving & start waiting
-    100% : wait
-
-(the rest later)
-
-*/
-/* REGULAR SCANLINES SETTINGS */
-/* MOVING SCANLINE SETTINGS */
-/* MIXINS */
-/* CSS .scanlines CLASS */
 
 
 #page{

@@ -1,4 +1,4 @@
-import typer from "./node_modules/typer-js/src/typer.js"
+import typer from "./typer.js"
 
 const inputBox = document.getElementById("mainI")
 const body = document.querySelector("body")
