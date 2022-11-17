@@ -71,14 +71,14 @@
   #welcome{
     padding-top: 1em;
     text-shadow: 0 0 5px #2e5730;
-    color: green;
+    color: rgb(88, 230, 88);
     opacity: 1;
     font-size: 50px;
   }
   #welcome2{
     padding-top: 1em;
     text-shadow: 0 0 5px #2e5730;
-    color: green;
+    color: rgb(88, 230, 88);
     opacity: 1;
     font-size: 30px;
   }
@@ -86,9 +86,9 @@
     text-align: left;
     padding-top: 1.2em;
     text-shadow: 0 0 5px #2e5730;
-    color: green;
+    color: rgb(88, 230, 88);
     opacity: 1;
-    font-size: 20px;
+    font-size: 23px;
   }
 
 #iArea{
@@ -96,9 +96,9 @@
     text-align: left;
 
     text-shadow: 0 0 5px #2e5730;
-    color: green;
+    color: rgb(88, 230, 88);
     opacity: 1;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 input {
@@ -108,9 +108,9 @@ input {
     border-left-style: hidden;
     border-bottom-style: hidden;
     outline: none;
-    color:green;
+    color: rgb(88, 230, 88);
     background-color: rgba(0, 0, 0, 0);
-    font-size:20px;
+    font-size:23px;
     text-align: left; 
     text-shadow: 0 0 5px #2e5730;
     
