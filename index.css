@@ -12,7 +12,7 @@
     text-align:center;
 }
 
-
+/* https://codepen.io/meduzen/pen/zxbwRV */
 .scanlines {
     height:100%;
     width: 100%;
@@ -102,6 +102,7 @@
 }
 
 input {
+    font-family: monospace;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;

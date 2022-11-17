@@ -17,9 +17,12 @@ inputBox.addEventListener('keypress',function(e){
         resp('Redirecting to Resume...',text)
         body.dispatchEvent(new Event('Type'))
 
+    }else if(text === 'github'){
+        resp('Redirecting to Github...',text)
+        body.dispatchEvent(new Event('Type'))
     }
     else if(text == 'help' || text == 'commands' || text == 'man'){
-        resp('Commands: help, resume, email, hello ',text)
+        resp('Commands: help, resume, email, hello, github ',text)
         body.dispatchEvent(new Event('Type'))
 
     }
@@ -53,6 +56,8 @@ typer('#rArea').listen('Type').run(() =>{
     inputBox.hidden = false;
     if(Rarr.join("") == ':<< Redirecting to Resume...'){
         window.open("https://docs.google.com/document/d/1D9x7UOJG-dLNMdP21lAQHkqk1QFUUMfIcS1LAzRfWAY/edit?usp=sharing")
+    }if(Rarr.join("") == ':<< Redirecting to Github...'){
+        window.open("https://github.com/nsantos19");
     }
     inputBox.focus()
 }).cursor(false).repeat(Infinity);
