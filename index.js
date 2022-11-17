@@ -30,6 +30,7 @@ inputBox.addEventListener('keypress',function(e){
     }
     else{
         resp("Command Not Found: try 'help' for commands",text)
+        body.dispatchEvent(new Event('Type'))
     }
     }
 
