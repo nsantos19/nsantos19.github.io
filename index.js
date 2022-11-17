@@ -59,7 +59,7 @@ typer('#rArea').listen('Type').run(() =>{
     }if(Rarr.join("") == ':<< Redirecting to Github...'){
         window.open("https://github.com/nsantos19");
     }
-    inputBox.focus()
+    inputBox.focus();
 }).cursor(false).repeat(Infinity);
 
 typer('#welcome').line(':<< SANTOS COMMUNCATIONS TERMINAL',{military:.3}).cursor(false);
