@@ -49,7 +49,7 @@ function resp(send,rec){
 
 typer('#rArea').listen('Type').run(() =>{
     inputBox.hidden = true;
-}).line().line(hArr).line(Rarr).run(() =>{
+}).line().line(hArr,30).line(Rarr,30).run(() =>{
     inputBox.hidden = false;
     if(Rarr.join("") == ':<< Redirecting to Resume...'){
         window.open("https://docs.google.com/document/d/1D9x7UOJG-dLNMdP21lAQHkqk1QFUUMfIcS1LAzRfWAY/edit?usp=sharing")
