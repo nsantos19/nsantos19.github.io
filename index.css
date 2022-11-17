@@ -1,0 +1,137 @@
+/* LIST OF FURTHER IMPROVEMENTS */
+/*
+currently working on :
+calculation draft for keyframes steps
+
+$scan-moving-duration: 3s;
+$scan-moving-delay: 7s;
+
+total time = 10s (duration + delay)
+keyframes :
+    0%: wait
+    15%: start moving
+    85%: end moving & start waiting
+    100% : wait
+
+(the rest later)
+
+*/
+/* REGULAR SCANLINES SETTINGS */
+/* MOVING SCANLINE SETTINGS */
+/* MIXINS */
+/* CSS .scanlines CLASS */
+
+
+#page{
+    font-family: monospace;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align:center;
+}
+
+
+.scanlines {
+    height:100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .scanlines:before, .scanlines:after {
+    display: block;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+  }
+  .scanlines:before {
+    width: 100%;
+    height: 2px;
+    z-index: 2147483649;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: .75;
+    -webkit-animation: scanline 6s linear infinite;
+            animation: scanline 6s linear infinite;
+  }
+  .scanlines:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483648;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 51%);
+    background-size: 100% 4px;
+    -webkit-animation: scanlines 3s steps(60) infinite;
+            animation: scanlines 3s steps(60) infinite;
+  }
+  
+  /* ANIMATE UNIQUE SCANLINE */
+  @-webkit-keyframes scanline {
+    0% {
+      transform: translate3d(0, 200000%, 0);
+    }
+  }
+  @keyframes scanline {
+    0% {
+      transform: translate3d(0, 200000%, 0);
+    }
+  }
+  @-webkit-keyframes scanlines {
+    0% {
+      background-position: 0 50%;
+    }
+  }
+  @keyframes scanlines {
+    0% {
+      background-position: 0 50%;
+    }
+  }
+
+  #welcome{
+    padding-top: 1em;
+    text-shadow: 0 0 5px #2e5730;
+    color: green;
+    opacity: 1;
+    font-size: 50px;
+  }
+  #welcome2{
+    padding-top: 1em;
+    text-shadow: 0 0 5px #2e5730;
+    color: green;
+    opacity: 1;
+    font-size: 30px;
+  }
+  #rArea{
+    text-align: left;
+    padding-top: 1.2em;
+    text-shadow: 0 0 5px #2e5730;
+    color: green;
+    opacity: 1;
+    font-size: 20px;
+  }
+
+#iArea{
+
+    text-align: left;
+
+    text-shadow: 0 0 5px #2e5730;
+    color: green;
+    opacity: 1;
+    font-size: 20px;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+    color:green;
+    background-color: rgba(0, 0, 0, 0);
+    font-size:20px;
+    text-align: left; 
+    text-shadow: 0 0 5px #2e5730;
+    
+  }
